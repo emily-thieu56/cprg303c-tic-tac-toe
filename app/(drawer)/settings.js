@@ -48,6 +48,14 @@ const settings = () => {
         status={ checked === 'seventh' ? 'checked' : 'unchecked' }
         onPress={() => setChecked('seventh')}
       />
+
+      <TextInput
+        label="Username"
+        placeholder="Username"
+        placeholderTextColor="#aaa"
+        value={text}
+        onChangeText={text => setText(text)}
+      />
     </View>
   )
 }
